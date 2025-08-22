@@ -12,7 +12,7 @@ ENV PATH=/opt/conda/bin:$PATH \
     RAY_EXPERIMENTAL_NOSET_CUDA_VISIBLE_DEVICES=1
 
 RUN pip --version 
-RUN pip install /opt/maca/share/mxsmi/*.whl
+RUN pip install /opt/maca/share/mxsml/*.whl
 
 COPY .. /workspace/gpustack
 RUN cd /workspace/gpustack && make build
