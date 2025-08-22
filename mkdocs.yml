@@ -98,6 +98,9 @@ nav:
       - Insi Mars:
           - Online Installation: installation/insi-mars/online-installation.md
           - Air-Gapped Installation: installation/insi-mars/air-gapped-installation.md
+      - Metax MACA:
+          - Online Installation: installation/metax-maca/online-installation.md
+          - Air-Gapped Installation: installation/metax-maca/air-gapped-installation.md
       - CPU:
           - Online Installation: installation/cpu/online-installation.md
           - Air-Gapped Installation: installation/cpu/air-gapped-installation.md

@@ -13,6 +13,7 @@ from gpustack.detectors.regredit.regredit import Regredit
 from gpustack.detectors.ixsmi.ixsmi import IXSMI
 from gpustack.detectors.cnmon.cnmon import Cnmon
 from gpustack.detectors.ht_smi.ht_smi import HTSMI
+from gpustack.detectors.mx_smi.mx_smi import MXSMI
 from gpustack.utils import platform
 
 
@@ -46,6 +47,7 @@ class DetectorFactory:
             platform.DeviceTypeEnum.COREX.value: [IXSMI()],
             platform.DeviceTypeEnum.MLU.value: [Cnmon()],
             platform.DeviceTypeEnum.MARS.value: [HTSMI()],
+            platform.DeviceTypeEnum.MACA.value: [MXSMI()],
         }
 
     def _validate_detectors(self):

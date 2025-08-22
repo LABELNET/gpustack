@@ -36,6 +36,7 @@ _VISIBLE_DEVICES_ENV_NAME_MAPPER = {
     VendorEnum.Iluvatar: "CUDA_VISIBLE_DEVICES",
     VendorEnum.Cambricon: "MLU_VISIBLE_DEVICES",
     VendorEnum.Insi: "CUDA_VISIBLE_DEVICES",
+    VendorEnum.Metax: "CUDA_VISIBLE_DEVICES",
 }
 
 

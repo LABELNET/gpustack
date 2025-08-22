@@ -54,6 +54,7 @@ GPUStack supports the following accelerators:
 - [x] Iluvatar Corex
 - [x] Cambricon MLU
 - [x] Insi Mars
+- [x] Metax MACA
 
 Ensure all necessary drivers and libraries are installed on the system prior to installing GPUStack.
 
@@ -111,6 +112,12 @@ To use Cambricon MLU as an accelerator, ensure the following components are inst
 To use Insi Mars as an accelerator, ensure the following components are installed:
 
 - Insi Mars Driver
+
+### Metax MACA
+
+To use Metax MACA as an accelerator, ensure the following components are installed:
+
+- [Metax MACA Driver](https://developer.metax-tech.com/)
 
 ## Networking Requirements
 

@@ -146,6 +146,7 @@ curl http://your_gpustack_server_url/v1/chat/completions \
 - [x] Iluvatar Corex
 - [x] Cambricon MLU
 - [x] Insi Mars
+- [x] Metax MACA
 
 ## Supported Models
 

@@ -449,7 +449,7 @@ class Config(BaseSettings):
 
             if vendor not in VendorEnum.__members__.values():
                 raise Exception(
-                    "Unsupported GPU device vendor, supported vendors are: Apple, NVIDIA, 'Moore Threads', Huawei, AMD, Hygon, Iluvatar, Cambricon, Insi"
+                    "Unsupported GPU device vendor, supported vendors are: Apple, NVIDIA, 'Moore Threads', Huawei, AMD, Hygon, Iluvatar, Cambricon, Insi, Metax"
                 )
 
             if not memory:
@@ -477,7 +477,7 @@ class Config(BaseSettings):
 
             if type not in DeviceTypeEnum.__members__.values():
                 raise Exception(
-                    "Unsupported GPU type, supported type are: cuda, musa, npu, mps, rocm, dcu, corex, mlu, mars"
+                    "Unsupported GPU type, supported type are: cuda, musa, npu, mps, rocm, dcu, corex, mlu, mars, maca"
                 )
 
             gpu_devices.append(
