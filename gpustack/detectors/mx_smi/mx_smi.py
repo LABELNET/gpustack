@@ -13,9 +13,6 @@ try:
     import pymxsml as mxsmi
 except ImportError:
     mxsmi = None
-    print(
-        "pymxsml is not installed. Please install it using: pip install /opt/maca/share/mxsml/*.whl"
-    )
 
 
 class MXSMI(GPUDetector):
@@ -23,7 +20,11 @@ class MXSMI(GPUDetector):
     def __init__(self):
         super().__init__()
         if mxsmi:
-            mxsmi.htSmlInit()
+            mxsmi.mxSmlInit()
+        else:
+            print(
+                "pymxsml is not installed. Please install it using: pip install /opt/maca/share/mxsml/*.whl"
+            )
 
     def is_available(self) -> bool:
         return is_command_available("mx-smi")
