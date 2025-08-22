@@ -9,6 +9,7 @@ from gpustack.schemas.workers import (
 from gpustack.utils import platform
 from gpustack.utils.command import is_command_available
 
+# using: pip install /opt/maca/share/mxsml/*.whl
 try:
     import pymxsml as mxsmi
 except ImportError:
@@ -21,10 +22,6 @@ class MXSMI(GPUDetector):
         super().__init__()
         if mxsmi:
             mxsmi.mxSmlInit()
-        else:
-            print(
-                "pymxsml is not installed. Please install it using: pip install /opt/maca/share/mxsml/*.whl"
-            )
 
     def is_available(self) -> bool:
         return is_command_available("mx-smi")
